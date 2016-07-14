@@ -1,0 +1,32 @@
+[
+{
+  "semana":"SEG",
+  "imagem":"sol",
+  "max":"25",
+  "min":"10"
+},
+{
+  "semana":"TER",
+  "imagem":"sol",
+  "max":"27",
+  "min":"14"
+},
+{
+  "semana":"QUA",
+  "imagem":"parcial-nublado",
+  "max":"29",
+  "min":"15"
+},
+{
+  "semana":"QUI",
+  "imagem":"parcial-nublado",
+  "max":"29",
+  "min":"14"
+},
+{
+  "semana":"SEX",
+  "imagem":"sol",
+  "max":"29",
+  "min":"17"
+}
+]
