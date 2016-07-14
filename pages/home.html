@@ -1,0 +1,81 @@
+<div class="columns is-mobile">
+	<div class="column is-fullwidth">
+
+		<nav style="background-color: white;  min-width: 450px;" class="panel">
+
+			<p style="text-align: center;" class="panel-heading">Ultimas Atualizações</p>
+
+			<div ng-include="'pages/ultimas-atualizacoes.html'" style="max-height: 180px; overflow: auto;"></div>
+
+		</nav>
+
+	</div>
+</div>
+
+<hr>
+
+<div class="columns">
+
+	<div class="column">    
+		<a class="button is-primary is-fullwidth is-medium" href="#transfN2">Transf Nível 2</a>
+	</div>
+
+	<div class="column">    
+		<a class="button is-primary is-fullwidth is-medium">Primary</a>
+	</div>
+
+	<div class="column">
+		<a class="button is-primary is-fullwidth is-medium">Primary</a>
+	</div>
+
+	<div class="column">
+		<a class="button is-primary is-fullwidth is-medium">Primary</a>
+	</div>
+
+</div>
+
+<hr style="margin-bottom: 5px;">
+<p style="margin-top: 0px;margin-bottom: 20px;" class="menu-label">Metas</p>
+
+<nav class="level">
+	<div ng-repeat="meta in metas" class="level-item has-text-centered">
+		<p class="heading">{{meta.nome}}</p>
+		<p class="title">{{meta.meta}}
+			<span class="icon">
+				<i class="fa fa-angle-{{meta.seta}}"></i>
+			</span>
+		</p>
+	</div>
+</nav>
+
+<!-- PREVISÃO DO TEMPO -->
+<hr style="margin-bottom: 5px;">
+<p style="margin-top: 0px;margin-bottom: 20px;" class="menu-label">Previsão do tempo</p>
+
+<nav  class="level">
+	<div ng-repeat="player in players" class="level-item has-text-centered">
+		<p class="heading">{{player.semana}}</p>
+		<img src="res/img/{{player.imagem}}.png">
+		<p class="title is-5">{{player.max}}° <span class="subtitle is-5">{{player.min}}°</span></p>
+	</div>
+</nav>
+<!--  -->
+
+<style type="text/css">
+	
+	#slides_control > div{
+		height: 200px;
+	}
+	#slides_control img{
+		margin:auto;
+		width: 400px;
+	}
+	#slides_control {
+		position:absolute;
+		width: 400px;
+		left:50%;
+		top:20px;
+		margin-left:-200px;
+	}
+
+</style>
