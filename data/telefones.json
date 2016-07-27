@@ -1,0 +1,177 @@
+[
+{
+   "nome": "Nextel",
+   "telefone": "1050",
+   "desc": "",
+   "horario": "Consultar em www.nextel.com.br",
+   "categoria": "Operadora"
+},
+{
+   "nome": "Tim",
+   "telefone": "1056",
+   "desc": "",
+   "horario": "Consultar em www.tim.com.br",
+   "categoria": "Operadora"
+},
+{
+   "nome": "Vivo",
+   "telefone": "1058",
+   "desc": "",
+   "horario": "Consultar em www.vivo.com.br",
+   "categoria": "Operadora"
+},
+{
+   "nome": "Oi",
+   "telefone": "1057",
+   "desc": "",
+   "horario": "Consultar em www.oi.com.br",
+   "categoria": "Operadora"
+},
+{
+   "nome": "Claro",
+   "telefone": "1052",
+   "desc": "",
+   "horario": "Consultar em www.claro.com.br",
+   "categoria": "Operadora"
+},
+{
+   "nome": "Central Motorola",
+   "telefone": "Centrais e Regiões Metropolitanas: 4002 1244 Demais localidades: 0800 773 1244",
+   "desc": "",
+   "horario": "De Segunda a Sexta das 8:00 as 20:00hs. Aos sábados das 8:00 as 14:00hs.",
+   "categoria": "Motorola"
+},
+{
+   "nome": "Central Lenovo",
+   "telefone": "Centrais e Regiões Metropolitanas: 4090-1234 Demais localidades: 0800-536-6860",
+   "desc": "",
+   "horario": "De Segunda a Sexta das 8:00 as 20:00hs. Aos sábados das 8:00 as 14:00hs.",
+   "categoria": "Motorola"
+},
+{
+   "nome": "Central Reclame Aqui",
+   "telefone": "3019-1474",
+   "desc": "Somente informar o número se o cliente possuir o ID de reclamação.",
+   "horario": "De Segunda a Sexta das 8:00 as 21:00hs. Aos sábados das 8:00 as 18:00hs.",
+   "categoria": "Motorola"
+},
+{
+   "nome": "Tornar-se Autorizada(SAM)",
+   "telefone": "https://docs.google.com/forms/d/1Ve_4hd-BHHfm9RlUGx4g0vp96VQwYAyoFtDvbsz2cRc/viewform?usp=send_form",
+   "desc": "Para clientes que possuem interesse em se tornar uma SAM (Assistência técnica autorizada Motorola), devemos enviar o link por e-mail para o cliente. Com esse link o consumidor irá preencher uma ficha e a Motorola entrará em contao com ele. Observação: Nos casos de Calls encaminhe o link por e-mail e nos casos de Chat o link poderá ser informado e enviado no momento do atendimento.",
+   "horario": "",
+   "categoria": "Autorizada"
+},
+{
+   "nome": "Loja Lenovo",
+   "telefone": "11 4003-8857",
+   "desc": "",
+   "horario": "De Segunda a Sexta das 8:00 as 20:00hs.",
+   "categoria": "Motorola"
+},
+{
+   "nome": "B2B",
+   "telefone": "11 3019-1419 /11 3019-1418",
+   "desc": "",
+   "horario": "De Segunda a Sexta das 8:00 as 21:00hs. Aos sábados das 8:00 as 18:00hs.",
+   "categoria": "Motorola"
+},
+{
+   "nome": "Motorola Solutions",
+   "telefone": "0800 891 6123",
+   "desc": "Selecionar a opção 1.",
+   "horario": "",
+   "categoria": "Motorola"
+},
+{
+   "nome": "Simm do Brasil",
+   "telefone": "0800-774-6678",
+   "desc": "",
+   "horario": "",
+   "categoria": "Outros"
+},
+{
+   "nome": "Motorola Industrial (Fábrica/Carway)",
+   "telefone": "(19) 3847-8082",
+   "desc": "Rodovia SP 340 - s/número - KM 128,7 A Bairro Tanquinho CEP: 13820-000 Jaguariúna - SP",
+   "horario": "De segunda a sexta das 08h ás 17h",
+   "categoria": "Motorola"
+},
+{
+   "nome": "Assessoria de Imprensa",
+   "telefone": "(11) 5501-4655",
+   "desc": "Informar apenas a Jornalistas e Reporteres",
+   "horario": "",
+   "categoria": "Motorola"
+},
+{
+   "nome": "MDX Telecom",
+   "telefone": "(11) 4003 - 6410",
+   "desc": "Linha de telefone sem fio MAs, Ms, Neo e MC1215",
+   "horario": "",
+   "categoria": "Outros"
+},
+{
+   "nome": "Motorola Symbol",
+   "telefone": "Centrais e Regiões Metropolitanas: 4133 3180 Demais localidades: 0800 771 1881",
+   "desc": "Para leitores de código de barras.",
+   "horario": "",
+   "categoria": "Outros"
+},
+{
+   "nome": "Globalstar",
+   "telefone": "0800 99 7890",
+   "desc": "Informações de Telefones Via Satélite",
+   "horario": "",
+   "categoria": "Outros"
+},
+{
+   "nome": "ANATEL",
+   "telefone": "0800 33 2001",
+   "desc": "Agência Nacional de Telecomunicações",
+   "horario": "",
+   "categoria": "Outros"
+},
+{
+   "nome": "AAT ( Allied Advanced Technologies )",
+   "telefone": "(0xx11) 3444 - 8750 // tmktaat@aatbrasil.com.br",
+   "desc": "Para quem deseja tornar-se revenda autorizada.",
+   "horario": "",
+   "categoria": "Autorizada"
+},
+{
+   "nome": "Btel Telecom",
+   "telefone": "0800 888 11 55 // sac@bteltelecom.com.br",
+   "desc": "Para quem deseja tornar-se revenda autorizada.",
+   "horario": "",
+   "categoria": "Autorizada"
+},
+{
+   "nome": "Teeleap",
+   "telefone": "(11) 3837 - 5200 // www.teeleap.com.br",
+   "desc": "Para quem deseja tornar-se revenda autorizada.",
+   "horario": "",
+   "categoria": "Autorizada"
+},
+{
+   "nome": "BGH",
+   "telefone": "(11) 3488 - 0715 // wagner.goncalves@bgh.com.br",
+   "desc": "Para quem deseja tornar-se revenda autorizada.",
+   "horario": "",
+   "categoria": "Autorizada"
+},
+{
+   "nome": "Seguro Motorola ",
+   "telefone": "0800 777 0065",
+   "desc": "Comunicação de sinistro.",
+   "horario": "Das 08hs às 20hs e para outras solicitações atendimento 24hs.",
+   "categoria": "Motorola"
+},
+{
+   "nome": "Loja Oficial Motorola e Motomaker",
+   "telefone": "11 4003-8859",
+   "desc": "Central de vendas Motorola.",
+   "horario": "Das 8:00 da manhã as 20:00 horas de Segunda a sábado.",
+   "categoria": "Motorola"
+}
+]

@@ -1,0 +1,123 @@
+<div class="columns">
+	<div class="column is-fullwidth">
+
+		<h1 class="title">Meu chip está com problemas<h1>
+			<span class="tag is-primary">Todos</span>
+			<span class="tag is-info">26/07/2016</span><span style="float: right;" class="tag">Acessórios</span>
+			<hr>
+			<label class="label">O chip está preso no aparelho?</label>
+			<p class="control">
+				<label class="radio">
+					<input type="radio" value="s" name="question1">
+					Sim
+				</label>
+				<label class="radio">
+					<input type="radio" value="n" name="question1">
+					Não
+				</label>
+			</p>
+			<label class="label">O chip é do tipo destacável da VIVO ou Cortado?</label>
+			<p class="control">
+				<label class="radio">
+					<input type="radio" value="destacavel" name="question2">
+					Destacável
+				</label>
+				<label class="radio">
+					<input type="radio" value="cortado" name="question2">
+					Cortado
+				</label>
+				<label class="radio">
+					<input type="radio" value="nd" name="question2">
+					Nenhuma das opções
+				</label>
+			</p>
+			<hr>
+
+			<div class="tb" style="display: none;" id="sim_destacavel">	
+				<span class="tag is-success">Sim</span>
+				<span class="tag is-info">Destacável</span>
+				<br><br>
+				<p>A operadora VIVO esta comercializando um modelo de SIM Card destacável, com os tamanhos padrões (Normal, Micro e Nano). Porém o tamanho Nano possui uma espessura menor do que os demais, com isso cria-se um desnível que pode danificar o Slot ao inserir ou remover e até mesmo ficar preso.</p>
+				<br>
+				<p>Encaminhe o cliente ao <a href="#sam">SAM</a> e insira a operadora que ele esta utilizando no campo "operadora" do Rightnow.</p>
+			</div>
+
+			<div class="tb" style="display: none;" id="nao_destacavel">	
+				<span class="tag is-danger">Não</span>
+				<span class="tag is-info">Destacável</span>
+				<ol>
+					<li>Verifique se o chip esta sendo inserido de forma correta ou no local correto.</li>
+					<li>Verifique se o chip esta ativo em: <kbd>Menu > Configurar > Cartões SIM</kbd>.</li>
+					<li>Reinicie o aparelho em modo de segurança.</li>
+					<li>Teste com outro chip.</li>
+				</ol>
+				<p>Funcionou?</p>
+				<br>
+				<table class="table is-bordered">
+					<tr>
+						<td style="text-align: center; width: 50%;">
+							<span class="tag is-success">SIM</span>
+						</td>
+						<td style="text-align: center;">
+							<span class="tag is-danger">NÃO</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>
+								<ol>
+									<li>Informe o cliente que o problema é no SIM que esta sendo utilizado e não no aparelho.</li>
+									<li>Informe o cliente que o modelo de chip comercializado pela VIVO esta danificando alguns slots.</li>
+									<li>Insira a operadora VIVO no campo "operadora" do Rightnow.</li>
+								</ol>
+							</p>
+						</td>
+						<td>
+							<p>
+								<ol>
+									<li>Informe o cliente que o modelo de chip comercializado pela VIVO esta danificando alguns slots.</li>
+									<li>Insira a operadora VIVO no campo "operadora" do Rightnow.</li>
+									<li>Encaminhe para o SAM.</li>
+									<p><strong>OBS:</strong> Sempre que necessário encaminhar aparelho para o SAM devemos orientar que o cliente realize o Backup de seus dados e retire qualquer tipo de senha de bloqueio.</p>
+								</ol>
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="tb" style="display: none;" id="sim_cortado">	
+				<span class="tag is-success">Sim</span>
+				<span class="tag is-info">Cortado</span>
+				<br><br>
+				<p>Encaminhe o cliente ao SAM e o oriente que o uso de chip cortado não é recomendado pela Motorola, ao utilizar chip cortado o riscos dele ficar preso no slot, danificar o aparelho ou não funcionar corretamente é muito alto.</p>
+			</div>
+
+			<div class="tb" style="display: none;" id="nao_cortado">	
+				<span class="tag is-danger">Não</span>
+				<span class="tag is-info">Cortado</span>
+				<br><br>
+				<p>Encaminhe o cliente ao SAM e o oriente que o uso de chip cortado não é recomendado pela Motorola, ao utilizar chip cortado o riscos dele ficar preso no slot, danificar o aparelho ou não funcionar corretamente é muito alto.</p>
+			</div>
+
+			<div class="tb" style="display: none;" id="sim_nenhuma">	
+				<span class="tag is-success">Sim</span>
+				<span class="tag is-info">Nenhuma</span>
+				<p>Encaminhe o cliente ao <a href="#sam">SAM</a></p>
+			</div>
+
+			<div class="tb" style="display: none;" id="nao_nenhuma">	
+				<span class="tag is-danger">Não</span>
+				<span class="tag is-info">Nenhuma</span>
+				<ol>
+					<li>Verifique se o chip esta sendo inserido de forma correta ou no local correto.</li>
+					<li>Verifique se o chip esta ativo em: <kbd>Menu > Configurar > Cartões SIM</kbd>.</li>
+					<li>Reinicie o aparelho em modo de segurança.</li>
+					<li>Teste com outro chip.</li>
+					<li>Encaminhe o cliente ao <a href="#sam">SAM</a></li>
+				</ol>
+			</div>
+
+			<hr>
+		</div>
+	</div>

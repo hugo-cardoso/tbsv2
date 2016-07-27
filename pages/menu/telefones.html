@@ -1,0 +1,72 @@
+<div class="columns content">
+	<div class="column is-fullwidth">
+
+		<h1 class="title">Telefones</h1>
+		<hr>
+
+		<div class="control is-horizontal">
+			<div style="flex: 0;" class="control-label">
+				<label class="label">Categoria:</label>
+			</div>
+			<div class="control is-grouped">
+				<p class="control">
+					<span class="select">
+						<select style="max-width: 150px;" ng-model="search.categoria">
+							<option value="">Todos</option>
+							<option value="motorola">Motorola</option> 
+							<option value="operadora">Operadoras</option> 
+							<option value="outros">Outros</option>
+							<option value="autorizada">Tornar-se autorizada</option> 
+						</select>
+					</span>
+				</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<div ng-repeat="player in players | filter:search:strict | orderBy: '-categoria'" class="box box-end">
+			
+			<h6 class="title is-5">
+				{{player.nome}} 
+				<span style="float: right;" class="tag is-primary">
+					<span style="margin-right: 5px;" class="icon is-small">
+					<i class="fa fa-tag"></i>
+					</span>
+					{{player.categoria}}
+				</span>
+			</h6>
+			<hr>
+			<p>		
+				<span style="margin-right: 15px; margin-top: 2px; color: #1fc8db;" class="icon is-small">
+					<i class="fa fa-phone"></i>
+				</span>
+				<span>{{player.telefone}}</span>
+				<br>
+				<span style="margin-right: 15px; margin-top: 2px;" class="icon is-small">
+					<i class="fa fa-clock-o"></i>
+				</span>
+				<span>{{player.horario}}</span>
+				<br>
+				<span style="margin-right: 15px; margin-top: 2px;" class="icon is-small">
+					<i class="fa fa-info"></i>
+				</span>
+				<span>{{player.desc}}</span>
+			</p>
+
+		</div>
+
+	</div>
+</div>
+
+<style type="text/css">
+	
+	.card-header-title{
+		cursor: pointer;
+	}
+
+	.accordion-content{
+		display: none;
+	}
+
+</style>
