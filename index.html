@@ -3,143 +3,49 @@
 <head>
 	<title></title>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="dep/tipped/tipped.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="dep/lightbox/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<style>
-	.panel-icon{
-		display: inline-block;
-		font-size: 16px;
-		height: 16px;
-		line-height: 16px;
-		text-align: center;
-		vertical-align: top;
-		width: 16px;
-		color: #aeb1b5;
-		float: right;
-		margin: 2px 4px 0 -2px;
-	}
-
-	.menu-list li ul{
-		display: none;
-	}
-
-	.menu-list .panel-icon {
-		color: #1fc8db;
-	}
-
-	.menu-list *{
-		-moz-user-select: none; 
-		-webkit-user-select: none; 
-		-ms-user-select:none; 
-		user-select:none;
-		-o-user-select:none;
-	}
-
-	.dropbtn {
-		background-color: #4CAF50;
-		color: white;
-		padding: 16px;
-		font-size: 16px;
-		border: none;
-		cursor: pointer;
-	}
-
-	.dropdown {
-		position: relative;
-		display: inline-block;
-		text-align: left;
-		margin-right: 10px;
-		margin-left: 10px;
-	}
-
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #FFF;
-		min-width: 160px;
-		box-shadow: 0 1px 4px rgba(0,0,0,0.3);
-		padding: 10px;
-	}
-
-	.dropdown-content a {
-		color: red;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-	}
-
-	.dropdown-content > ul > li:hover {background-color: #f5f7fa}
-
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
-
-	.dropdown:hover .dropbtn {
-		background-color: #3e8e41;
-	}
-
-	.dropdown-content>ul>li {
-		display: block;
-		padding: 3px 10px;
-		clear: both;
-		font-weight: normal;
-		line-height: 1.846;
-		color: #666666;
-		white-space: nowrap;
-	}
-
-	ol{
-		padding: 25px;
-	}
-
-</style>
 <body ng-app="scotchApp" ng-controller="mainController">
 
+	<!-- NAV BAR -->
 	<nav class="nav">
 		<div class="nav-left">
-			<a class="nav-item" href="#">
-				<img src="http://community.motorola.com/sites/default/files/logos/logo-animation-header-sm-0003.png" alt="Bulma logo}">
-			</a>
 			<div class="nav-item">
-
-				<a href="#teste" align="center" class="button is-primary" title="Voltar">
-<!-- 					<span style="margin-left: 0px;" class="icon is-small">
+				<a href="#teste" align="center" class="button is-primary clear-list" title="Voltar">
+					<span style="margin: 0px;" class="icon is-small">
 						<i class="fa fa-home"></i>
-					</span> -->
-					<span>INÍCIO</span>
-				</a>
-
-				<button onclick="reload();" align="center" class="button create-tooltip" title="Trocar de ambiente">
-					<span style="margin-left: 0px;" class="icon is-small">
-						<i class="fa fa-refresh"></i>
 					</span>
-				</button>
+				</a>
 			</div>
+			<p class="nav-item">
+				<span id="msg"></span>
+			</p>
 		</div>
 
 
 		<div class="nav-center">
-			<p class="nav-item">
-				<!-- <span id="hora">00</span>:<span id="minuto">00</span> -->
-				<span>v2.0</span>
-			</p>
+			<a class="nav-item" href="index.html#/teste">
+				<img id="logo-home" src="res/img/logo-animation-header-sm-0003.png" alt="logo">
+			</a>
 		</div>
 
 		<div class="nav-right nav-menu">
 
 			<div class="nav-item">
 
-				<a href="javascript:window.history.go(-1)" align="center" class="button create-tooltip" title="Voltar">
+				<a href="javascript:window.history.go(-1)" align="center" class="button create-tooltip clear-list" title="Voltar">
 					<span style="margin-left: 0px;" class="icon is-small">
 						<i class="fa fa-angle-left"></i>
 					</span>
 				</a>
 
-				<a href="javascript:window.history.go(+1)" align="center" class="button create-tooltip" title="Avançar">
+				<a href="javascript:window.history.go(+1)" align="center" class="button create-tooltip clear-list" title="Avançar">
 					<span style="margin-left: 0px;" class="icon is-small">
 						<i class="fa fa-angle-right"></i>
 					</span>
@@ -151,13 +57,13 @@
 					</span>
 				</a>
 
-				<a align="center" class="button create-tooltip" title="Telefones Úteis">
+				<a href="#telefones" align="center" class="button create-tooltip clear-list" title="Telefones Úteis">
 					<span style="margin-left: 0px;" class="icon is-small">
 						<i class="fa fa-phone"></i>
 					</span>
 				</a>
 
-				<a href="#sam" align="center" class="button">
+				<a href="#sam" align="center" class="button clear-list">
 					<span class="icon is-small">
 						<i class="fa fa-map-marker"></i>
 					</span>
@@ -173,13 +79,45 @@
 					</a>
 					<div class="dropdown-content" style="right: 0px;">
 						<ul>
-							<li>Item 1</li>
-							<li>Item 2</li>
+							<li id="anotacoes">
+								<a>
+									<span style="margin-top: 5px;" class="icon is-small">
+										<i class="fa fa-edit"></i>
+									</span>
+									<span>Anotações</span>
+								</a>
+							</li>
+							<li id="cronometro">
+								<a>
+									<span style="margin-top: 5px;" class="icon is-small">
+										<i class="fa fa-clock-o"></i>
+									</span>
+									<span>Cronômetro</span>
+								</a>
+							</li>
+							<li class="motorolaOnly">
+								<a href="#compare" class="clear-list">
+									<span style="margin-top: 5px;" class="icon is-small">
+										<i class="fa fa-mobile"></i>
+									</span>
+									<span>Compare</span>
+								</a>
+							</li>
+							<li id="cep">
+								<a>
+									<span style="margin-top: 5px;" class="icon is-small">
+										<i class="fa fa-thumb-tack"></i>
+									</span>
+									<span>Consulta CEP</span>
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 
-				<a href="#aparelhos" class="button is-primary">Aparelhos</a>
+				<a style="margin-left: 0px;" href="#aparelhosLenovo" class="button is-success clear-list lenovoOnly">Aparelhos</a>
+
+				<a style="margin-left: 0px;" href="#aparelhosMotorola" class="button is-primary clear-list motorolaOnly">Aparelhos</a>
 
 				<a id="btnModal" align="center" class="button create-tooltip" title="Ver Mais">
 					<span style="margin-left: 0px;" class="icon is-small">
@@ -190,6 +128,7 @@
 			</div>
 		</div>
 	</nav>
+	<!--  -->
 
 
 	<div class="container is-fluid">
@@ -204,27 +143,114 @@
 					<div class="box" style="width: 350px;">
 
 						<p class="control has-icon">
-							<input id="filter" class="input" type="text" placeholder="Digite aqui o que procura."></input>
+							<input id="filter" class="input is-primary" type="text" placeholder="O que você procura?"></input>
 							<i class="fa fa-search"></i>
 						</p>
 
 						<hr>
 
-						<aside class="menu">
-							<p id="lblBusca" class="menu-label">
+						<aside id="tbsMotorola" class="menu">
+							<p class="menu-label">
 								Categorias
 							</p>
 							<ul class="menu-list">
 								<li id="users">
 									<div>
-										<a class="categoria">Funções Básicas<span class="panel-icon"><i class="fa fa-angle-down"></i></span>	</a>
+<!-- 										<a class="categoria">DEMO<span class="panel-icon"><i class="fa fa-angle-down"></i></span>	</a>
 										<ul class="list">
 											<li><a href="#pagina1">Página 1</a></li>
 											<li><a href="#pagina2">Página 2</a></li>
 											<li><a href="#pagina3">Página 3</a></li>
+											<li><a href="#pagina4">Página 4</a></li>
+											<li><a href="#resultados">Resultados</a></li>
+										</ul> -->
+
+										<a class="categoria">Funções Básicas<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
+										<ul class="list">
+											<li><a href="#correcaoCores">Como corrigir as cores? <span>correção</span></a></li>
+											<li><a href="#inverterCores">Como inverter as cores? <span>inversão</span></a></li>
+											<li><a href="#fixacaoTela">Como fixar a tela? <span>fixação</span></a></li>
+											<li><a href="#modoSeguranca">Como iniciar em modo de segurança? <span>safe</span></a></li>
+											<li><a href="#modoDemonstrativo">Como sair do modo demonstrativo? <span>demonstração</span></a></li>
+											<li><a href="#modoProgramador">Como ativar o modo programador? <span>desenvolvedor</span></a></li>
+											<li><a href="#bloqueioDeTela">Como mudar o bloqueio de tela? <span></span></a></li>
+											<li><a href="#sensorBiometrico">Como configurar o sensor biométrico? <span>digital</span></a></li>
+											<li><a href="#transmitirTela">Como transmitir tela? <span>chromecast</span></a></li>
+											<li><a href="#trocaDeUsuario">Como utilizar a troca de usuário? <span></span></a></li>
 										</ul>
 
 										<a class="categoria">Acessórios<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
+										<ul class="list">
+											<li><a href="#cartaoMemoriaInterna">Como usar o cartão SD como memória interna? <span>cartão de memória</span></a></li>
+											<li><a href="#foneBluetooth">Meu fone Bluetooth não funciona <span>fone de ouvido</span></a></li>
+											<li><a href="#problemasCartaoSd">Meu cartao SD não funciona <span>cartão de memória</span></a></li>
+											<li><a href="#problemasChip">Meu chip está com problemas <span>sim card</span></a></li>
+										</ul>
+
+										<a class="categoria">Aplicativos<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
+										<ul class="list">
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+
+										<a class="categoria">Áudio<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
+										<ul class="list">
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+
+										<a class="categoria">Bateria e Recarga<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
+										<ul class="list">
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+
+										<a class="categoria">Câmera<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
+										<ul class="list">
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+
+										<a class="categoria">Chamada<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
+										<ul class="list">
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+
+										<a class="categoria">Conectividade<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
+										<ul class="list">
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+
+										<a class="categoria">GPS<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
+										<ul class="list">
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+
+										<a class="categoria">Tela<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
+										<ul class="list">
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+
+										<a class="categoria">Sistema<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
+										<ul class="list">
+											<li><a href="#naoLiga">Não liga<span>nao liga ,</span></a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+
+										<a class="categoria">Outros<span class="panel-icon"><i class="fa fa-angle-down"></i></span></a>
 										<ul class="list">
 											<li><a href="#">Item 1</a></li>
 											<li><a href="#">Item 2</a></li>
@@ -233,19 +259,55 @@
 									</div>
 								</li>
 
-								<div style="display: none; text-align: center;" id="msgResultado_0" class="notification">
-									Nada encontrado :(
+								<div style="display: none; text-align: center;" class="notification msgResultado_0">
+									Ops! Não consegui encontrar nada. :(
+								</div>
+							</ul>
+						</aside>
+
+						<aside style="display: none;" id="tbsLenovo" class="menu">
+							<p class="menu-label lblBusca">
+								Categorias
+							</p>
+							<ul class="menu-list">
+								<li id="users">
+									<div>
+										<ul style="display: block;" class="list">
+											<li><a href="#pagina1">Página 1</a></li>
+											<li><a href="#pagina2">Página 2</a></li>
+											<li><a href="#pagina3">Página 3</a></li>
+											<li><a href="#pagina4">Página 4</a></li>
+											<li><a href="#resultados">Resultados</a></li>
+											<li><a href="#">Item 1</a></li>
+											<li><a href="#">Item 2</a></li>
+											<li><a href="#">Item 3</a></li>
+										</ul>
+									</div>
+								</li>
+
+								<div style="display: none; text-align: center;" class="notification msgResultado_0">
+									Ops! Não consegui encontrar nada. :(
 								</div>
 							</ul>
 						</aside>
 
 					</div>
 
+					<span style="text-align: center;" id="sessao" class="tag is-primary">00:00:00</span>
+					<button onclick="reload()" style="text-align: center;" class="tag button is-primary">
+						<span style="margin: 0px;" class="icon is-small">
+							<i class="fa fa-refresh"></i>
+						</span>
+					</button>
+					<a style="text-align: center;" class="tag button" href="#sobre">
+						Sobre
+					</a>
 				</div>
 
 				<div class="column">
 					<div  class="box">
-						<div ng-view></div>
+						<div style="display: none; text-align: center; font-weight: bold;" id="holdsimples" class="notification is-danger"></div>
+						<div id="view" ng-view></div>
 					</div>
 				</div>
 
@@ -288,13 +350,13 @@
 		<!-- POP-UP -->
 
 		<div id="popUp" class="modal">
-			<div class="modal-background"></div>
+			<div style="background-color: rgba(17, 17, 17, 0.30);" class="modal-background close-modal"></div>
 			<div style="margin-top: 15px;" class="modal-card">
 				<header class="modal-card-head">
 					<p class="modal-card-title">Título</p>
 					<button class="delete close-modal"></button>
 				</header>
-				<section class="modal-card-body">
+				<section style="min-height: 150px; font-size: 20px;" class="modal-card-body">
 					<!-- Content ... -->
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -308,133 +370,194 @@
 			</div>
 		</div>
 
+		<!-- Anotações -->
+
+		<div id="popUp_Anotacoes" class="modal">
+			<div style="background-color: rgba(17, 17, 17, 0.85);" class="modal-background close-modal"></div>
+			<div style="margin-top: 15px;" class="modal-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title">Anotações</p>
+					<button class="delete close-modal"></button>
+				</header>
+				<section style="min-height: 275px;" class="modal-card-body">
+					<!-- Content ... -->
+					<p class="control">
+						<textarea style="height: auto;" rows="10" id="anotaTxt" class="textarea" placeholder="..." ></textarea>
+					</p>
+					<p class="control">
+						<button style="float: left;" class="button" id="carregarAnota">Carregar</button>
+						<button style="float: right;" class="button is-primary" id="salvarAnota">Salvar</button>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<!-- Cronômetro -->
+
+		<div id="popUp_Cronometro" class="modal">
+			<div style="background-color: rgba(17, 17, 17, 0.85);" class="modal-background close-modal"></div>
+			<div style="margin-top: 15px;" class="modal-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title">Cronômetro</p>
+					<button class="delete close-modal"></button>
+				</header>
+				<section style="min-height: 200px;" class="modal-card-body">
+					<!-- Content ... -->
+					<div align="center">
+						<p style="justify-content: center;" class="control has-addons">
+							<button onclick="javascript:avvia();" type="button" class="button">
+								<span style="margin: 0px;" class="icon is-small">
+									<i class="fa fa-play"></i>
+								</span>
+							</button>
+							<button onclick="javascript:azzera();" type="button" class="button">
+								<span  style="margin: 0px;" class="icon is-small">
+									<i class="fa fa-stop"></i>
+								</span>
+							</button>
+							<button onclick="javascript:restart();" type="button" class="button">
+								<span style="margin: 0px;" class="icon is-small">
+									<i class="fa fa-refresh"></i>
+								</span>
+							</button>
+						</p>
+						<hr>
+						<h1 class="subtitle is-1" id="vis">000:00:0</h1>
+						<div style="display: none; text-align: center; font-weight: bold;" id="holdsimples1" class="notification is-danger"></div>
+					</div>
+
+				</section>
+			</div>
+		</div>
+
+		<!-- CEP -->
+
+		<div id="popUp_Cep" class="modal">
+			<div style="background-color: rgba(17, 17, 17, 0.85);" class="modal-background close-modal"></div>
+			<div style="margin-top: 15px;" class="modal-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title">Consulta CEP</p>
+					<button class="delete close-modal"></button>
+				</header>
+				<section style="min-height: 300px;" class="modal-card-body">
+					<!-- Content ... -->
+					<p class="control has-addons">
+						<input id="codCep" class="input" type="text" placeholder="00000-000">
+						<a  id="subCep" class="button is-primary">
+							Buscar
+						</a>
+					</p>
+					<hr>
+					<table id="tabelaCep" class="table is-bordered">
+						<tr>
+							<td>
+								<strong>CEP:</strong>
+							</td>
+							<td>
+								<span ng-bind="ceps.cep"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>Logradouro:</strong>
+							</td>
+							<td>
+								<span ng-bind="ceps.logradouro"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>Bairro:</strong>
+							</td>
+							<td>
+								<span ng-bind="ceps.bairro"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>Cidade:</strong>
+							</td>
+							<td>
+								<span ng-bind="ceps.localidade"></span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>Estado:</strong>
+							</td>
+							<td>
+								<span ng-bind="ceps.uf"></span>
+							</td>
+						</tr>
+					</table>
+				</section>
+			</div>
+		</div>
+
 	</body>
-	<!-- jQuery v1.11.1 -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- jQuery v1.11.3 -->
-	<script type="text/javascript" src="http://helpmotorola.atento.com.br/website/e_arq_comum/1/arquivos/jquery.min.js"></script>
-	<!-- jQuery v1.9.1 -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<!-- AngularJS -->
 	<script type="text/javascript" src="dep/angularJS/angular.js"></script>
 	<script type="text/javascript" src="dep/angularJS/angular-route.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<!-- Toottip -->
 	<!-- 	<script type="text/javascript" src="dep/tipped/tipped.js"></script> -->
-	<!-- Caroulsel -->
-	<script type="text/javascript" src="dep/jCarousel/jquery.jcarousel.min.js"></script>
-	<script type="text/javascript" src="dep/jCarousel/jcarousel.basic.js"></script>
 	<!-- Lightbox -->
 	<script type="text/javascript" src="dep/lightbox/lightbox.min.js"></script>
 	<!-- Script -->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/controllers/compareController.js"></script>
+	<script type="text/javascript" src="js/controllers/samController.js"></script>
+	<script type="text/javascript" src="js/controllers/telefonesController.js"></script>
 	<script type="text/javascript">
 
-	// Pop-up
+		var tempo = new Number();
+		// Tempo em segundos
+		tempo = 900;
 
-		$("#popUp").show();
+		function startCountdown(){
 
-		setInterval(function(){ 
-			$("#popUp").hide();
-		}, 5000);
+		// Se o tempo não for zerado
+		if((tempo - 1) >= 0){
 
-	// 
+		// Pega a parte inteira dos minutos
+		var min = parseInt(tempo/60);
+		// Calcula os segundos restantes
+		var seg = tempo%60;
 
-	// ATUALIZAÇÃO DA HORA
-
-	setInterval(function(){ 
-
-		var d = new Date();
-		var h = d.getHours();
-		var m = d.getMinutes();
-
-		// $("#hora").html(h);
-		// $("#minuto").html(m);
-
-	}, 1000);
-
-	// 
-
-	// DROPDOWN DO MENU LATERAL
-
-	$(".categoria").click(function() {
-
-		if($(this).next("ul").css("display") === "none"){
-			$(".menu-list > li > ul:visible").hide();
-			$(this).next("ul").show();
-			$(".categoria").children().children().attr("class", "fa fa-angle-down");
-			$(this).children().children().attr("class", "fa fa-angle-up");
+		// Formata o número menor que dez, ex: 08, 07, ...
+		if(min < 10){
+			min = "0"+min;
+			min = min.substr(0, 2);
 		}
-		else{
-			$(this).next("ul").hide();
-			$(this).children().children().attr("class", "fa fa-angle-down");
-		}	
+		if(seg <= 9){
+			seg = "0"+seg;
+		}
 
-	});
+		// Cria a variável para formatar no estilo hora/cronômetro
+		horaImprimivel = '00:' + min + ':' + seg;
+		//JQuery pra setar o valor
+		$("#sessao").html(horaImprimivel);
 
-	// 
+		// Define que a função será executada novamente em 1000ms = 1 segundo
+		setTimeout('startCountdown()',1000);
 
-	// PESQUISA MENU LATERAL
+		// diminui o tempo
+		tempo--;
 
-	$(function(){
-
-		$('input[type="text"]').keyup(function(){
-
-			var searchText = $(this).val();
-
-			if(searchText.length > 0){
-				$(".categoria").hide();
-				$("#lblBusca").html("Resultado");
-				$(".list").show();
-			}
-			else{
-				$(".categoria").show();
-				$("#lblBusca").html("Categorias");
-				$(".list").hide();
-				$(".categoria").children().children().attr("class", "fa fa-angle-down");
-			}
-
-			$('.list > li').each(function(){
-
-				var currentLiText = $(this).text(),
-				showCurrentLi = currentLiText.indexOf(searchText) !== -1;
-
-				$(this).toggle(showCurrentLi);
-
-			});
-
-			if($(".list li:visible").length === 0){
-				if(searchText.length > 0){
-					$("#msgResultado_0").show();
-				}
-				else{
-					$("#msgResultado_0").hide();
-				}
-			}
-			else{
-				$("#msgResultado_0").hide();
-			}
-
-			$("#count").html($(".list li:visible").length);  
-		});
-
-	});
-
-	// 
-
-	// ATUALIZAÇÃO A CADA 10MIN
-
-	function reload() {
-		location.reload(true);
-	};
-
-
-	setInterval(function(){ 
-
+		// Quando o contador chegar a zero faz esta ação
+	} 
+	else {
+		$("#sessao").html("00:00:00");
+		alert("Acabou!");
 		reload();
+	}
 
-	}, 60000 * 10);
+}
 
-	// 
+// Chama a função ao carregar a tela
+startCountdown();
 
 </script>
 </html>
